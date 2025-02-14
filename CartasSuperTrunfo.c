@@ -1,29 +1,42 @@
 #include <stdio.h>
+int main(){
+//ENTRADA DE DADOS
+    char estado, nome[20];
+    int cidade, area, populacao, pib, pontos_turistico;
 
-int main() {
-    char codcidade[20], nome[20];
-    int populacao, area, pib, pontturisticos;
+    printf("SUPER TRUNFO\n"); 
+    printf("CADASTRE SUA CARTA PREENCHEDO AS INFORMAÇÕES ABAIXO:\n -");
 
-    printf("PREENCHA AS INFORMAÇÕES ABAIXO PARA CADASTRAR A CARTA NO SUPER TRUNFO \n");
-    printf("CÓDIGO DA CIDADE \n - ");
-    scanf(" %s", &codcidade);
+    printf("ESCOLHA UMA LETRA ENTRE (A a H) PARA IDENTIFICAR O ESTRADO \n -");
+    scanf(" %c", &estado);
 
-    printf("NOME \n - ");
+    printf("ESCOLHA UM NÚMERO ENTRE (1 a 8) PARA IDENTIFICAR A CIDADE\n -");
+    scanf(" %d", &cidade);
+
+    printf("NOME DA CIDADE: \n -");
     scanf(" %s", &nome);
 
-    printf("POLULAÇÃO \n - ");
-    scanf(" %d", &populacao);
-
-    printf("AREA \n");
+    printf("AREA: \n -");
     scanf(" %d", &area);
 
-    printf("PIB \n");
-    scanf(" %d", &pib);
+    printf("POPULAÇÃO: \n -");
+    scanf(" %d", &populacao); 
 
-    printf("NUMERO DE PONTOS TURÍSTICOS \n - ");
-    scanf(" %d", &pontturisticos);
+    printf("PIB: \n -");
+    scanf(" %d", &pib); 
 
-    printf("Código da carta: %s - Nome da cidade: %s - População: %d \n Área: %d - Pib: %d - Pontos turísticos: %d", codcidade, nome, populacao, area, pib, pontturisticos);
+    printf("NÚMERO DE PONTOS TURÍSTICOS: \n -");
+    scanf(" %d", &pontos_turistico);
 
-    return 0;
+//SAIDA DE DADOS
+//INFORMAÇÕES CADASTRADAS
+    printf("INFORMAÇÕES CADASTRADAS: \n");
+    printf("CÓDIGO DA CARTA: %c%d \n", estado, cidade);
+    printf("NOME DA CIDADE: %s \n", nome);
+    printf("ÁREA: %d \n", area);
+    printf("POPULAÇÃO: %d \n", populacao),
+    printf("PIB: %d \n", pib);
+    printf("PONTOS TURÍSTICOS: %d \n", pontos_turistico);
+
 }
+
